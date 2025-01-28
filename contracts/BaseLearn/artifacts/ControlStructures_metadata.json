@@ -1,0 +1,95 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_time",
+						"type": "uint256"
+					}
+				],
+				"name": "AfterHours",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_time",
+						"type": "uint256"
+					}
+				],
+				"name": "doNotDisturb",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					}
+				],
+				"name": "fizzBuzz",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BaseLearn/ControlStructures.sol": "ControlStructures"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BaseLearn/ControlStructures.sol": {
+			"keccak256": "0x1f4ade1f6f4909dedc355e7973b2943383de03fc2807870fafa98ea85381dbcf",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://36e7138b07637194b9f0ee8d2202a38536cbac3bb0f781be85fe23341cd67e18",
+				"dweb:/ipfs/QmaSKgLHEsaZSgZgyQxYHRfmi4Sak68Uxyz9EBVh2PokB6"
+			]
+		}
+	},
+	"version": 1
+}

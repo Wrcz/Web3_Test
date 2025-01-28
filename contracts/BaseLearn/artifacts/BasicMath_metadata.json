@@ -1,0 +1,104 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_b",
+						"type": "uint256"
+					}
+				],
+				"name": "adder",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "sum",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "error",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_b",
+						"type": "uint256"
+					}
+				],
+				"name": "subtractor",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "difference",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "error",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BaseLearn/BasicMath.sol": "BasicMath"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BaseLearn/BasicMath.sol": {
+			"keccak256": "0xc8dece21d5f97eebbd15e63d43fd39565a6a55d34e09d6f9725d990a30a66a22",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://31882f3b3026b7d34e629ef07c9c99422c718ca5b01ac5a2cd1509a01193c0a2",
+				"dweb:/ipfs/QmNedHNoCDTMzecqaAJLm98apTorb8ATJ5opT5BbVhaVAJ"
+			]
+		}
+	},
+	"version": 1
+}
