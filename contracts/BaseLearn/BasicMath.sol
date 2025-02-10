@@ -12,6 +12,7 @@ contract BasicMath {
         }
     }
 
+//Funcion que determina la diferencia
     function subtractor(uint _a, uint _b) external pure returns (uint difference, bool error) {
         if (_b > _a) {
             return (0, true);
@@ -20,4 +21,4 @@ contract BasicMath {
             return (_a - _b, false);
         }
     }
-}
+} 
