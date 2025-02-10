@@ -1,0 +1,158 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_albumName",
+						"type": "string"
+					}
+				],
+				"name": "NotApproved",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_albumName",
+						"type": "string"
+					}
+				],
+				"name": "addRecord",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getApprovedRecords",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "getUserFavorites",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resetUserFavorites",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "userFavorites",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"errors": {
+				"NotApproved(string)": [
+					{
+						"details": "Custom error to handle unapproved records",
+						"params": {
+							"_albumName": "Nombre del album con error"
+						}
+					}
+				]
+			},
+			"kind": "dev",
+			"methods": {
+				"addRecord(string)": {
+					"details": "Funcion para agregar registros de albunes de usuarios",
+					"params": {
+						"_albumName": "El nombre del album a agregar"
+					}
+				},
+				"resetUserFavorites()": {
+					"details": "Funcion para resetear albunes favoritos"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BaseLearn/FavoriteRecords.sol": "FavoriteRecords"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BaseLearn/FavoriteRecords.sol": {
+			"keccak256": "0x95b7cc7cbabe06fb4ac478198c273a5dc368ece4819cda60d25100e9cc7a3e9d",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://cbed3312519c5630abff86c8e9e76827a67f210d781e0bd6bc3a082919fb229d",
+				"dweb:/ipfs/QmPBTgaWXCneWdDumR3oB241e2bVWt2vvuCHZuxP6pSFPg"
+			]
+		}
+	},
+	"version": 1
+}

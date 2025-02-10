@@ -18,6 +18,7 @@ contract ControlStructures {
 
     function doNotDisturb(uint _time) external pure returns (string memory) {
         assert(_time < 2400);
+        
         if (_time > 2200 || _time < 800) {
             revert AfterHours(_time);
         }

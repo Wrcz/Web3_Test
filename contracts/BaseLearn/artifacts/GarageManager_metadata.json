@@ -1,0 +1,272 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "BadCarIndex",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_make",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_model",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_color",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numberOfDoors",
+						"type": "uint256"
+					}
+				],
+				"name": "addCar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "garage",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "make",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "model",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "color",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numberOfDoors",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMyCars",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "make",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "model",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "color",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "numberOfDoors",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct GarageManager.Car[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "getUserCars",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "make",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "model",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "color",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "numberOfDoors",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct GarageManager.Car[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resetMyGarage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_make",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_model",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_color",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numberOfDoors",
+						"type": "uint256"
+					}
+				],
+				"name": "updateCar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"addCar(string,string,string,uint256)": {
+					"details": "Permite agregar un nuevo auto a la lista de un owner",
+					"params": {
+						"_color": "Color del auto",
+						"_make": "Fabricante del auto",
+						"_model": "Model del auto",
+						"_numberOfDoors": "Numero de puertas"
+					}
+				},
+				"getMyCars()": {
+					"details": "Funcion que devuelve todos los autos del usuario actual"
+				},
+				"getUserCars(address)": {
+					"details": "Funcion que devuelve los autos de una determinada direccion",
+					"params": {
+						"_address": "Direccion de cartera para consultar sus autos"
+					}
+				},
+				"resetMyGarage()": {
+					"details": "Funcion que eliminas los autos del propietario"
+				},
+				"updateCar(uint256,string,string,string,uint256)": {
+					"details": "Funcion que actualiza automovil",
+					"params": {
+						"_color": "Color del automovil",
+						"_index": "Indice buscado",
+						"_make": "Fabricante de automovil",
+						"_model": "Modelo del automovil",
+						"_numberOfDoors": "Numero de puertas "
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BaseLearn/GarageManager.sol": "GarageManager"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BaseLearn/GarageManager.sol": {
+			"keccak256": "0xea7c6a9dd6768990e2158df354097473c97e6c5d11991374186fbf544ef1ceb9",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://3801ffe61ade96f331c361c9548c7d5a685920e85f883da672b4be8cb6fb2a90",
+				"dweb:/ipfs/QmbrMJruTaQG1qgXLQVzc1bMgqjXXZgF8aVDPJCfqWyGBW"
+			]
+		}
+	},
+	"version": 1
+}

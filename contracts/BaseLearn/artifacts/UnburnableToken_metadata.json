@@ -1,0 +1,189 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "AllTokensClaimed",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "TokensClaimed",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_direccion",
+						"type": "address"
+					}
+				],
+				"name": "UnsafeTransfer",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "claim",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllBalances",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "safeTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalClaimed",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Contrato que gestiona un token que no puede ser quemado,      permitiendo a los usuarios reclamar tokens y transferirlos de manera segura.",
+			"kind": "dev",
+			"methods": {
+				"claim()": {
+					"details": "Permite a un usuario reclamar una cantidad fija de tokens."
+				},
+				"constructor": {
+					"details": "Constructor que inicializa el suministro total del token."
+				},
+				"getAllBalances()": {
+					"details": "Obtiene todas las direcciones con saldo y sus respectivos valores.",
+					"returns": {
+						"_0": "Un arreglo con las direcciones y otro con los saldos correspondientes."
+					}
+				},
+				"safeTransfer(address,uint256)": {
+					"details": "Realiza una transferencia segura de tokens entre usuarios.",
+					"params": {
+						"_amount": "Cantidad de tokens a transferir.",
+						"_to": "Dirección del destinatario."
+					}
+				}
+			},
+			"title": "UnburnableToken",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"claim()": {
+					"notice": "Cada usuario solo puede reclamar una vez.No se pueden reclamar más tokens si el suministro total ha sido distribuido."
+				},
+				"safeTransfer(address,uint256)": {
+					"notice": "La transferencia debe cumplir con ciertas condiciones de seguridad."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BaseLearn/UnburnableToken.sol": "UnburnableToken"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BaseLearn/UnburnableToken.sol": {
+			"keccak256": "0x4dd94d15a0ac0da20d498b745b1729e11231f1807128cde16e17ffecb2bee98e",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://0072e13e5fb6133f426cd053fac5e0c001c8ac3163922b50ba095df989d2fa50",
+				"dweb:/ipfs/QmWXh1DYecfbgL5AizhjQ5P7y3mJHMuugm72GaDP3JqwbX"
+			]
+		}
+	},
+	"version": 1
+}
